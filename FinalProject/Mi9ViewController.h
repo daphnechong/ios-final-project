@@ -10,4 +10,5 @@
 
 @interface Mi9ViewController : UIViewController
 
+- (IBAction) loadBarInformation:(id)sender;
 @end
