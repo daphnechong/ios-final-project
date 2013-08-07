@@ -18,9 +18,6 @@
 @end
 
 @implementation Mi9ViewController
-{
-    COMPLETION_BLOCK _completionBlock;
-}
 
 - (void)viewDidLoad
 {
@@ -35,23 +32,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (COMPLETION_BLOCK) completionBlock
-{
-    if (!_completionBlock)
-    {
-        COMPLETION_BLOCK block = ^(NSURLResponse *response, NSArray *jsonData, NSError *error){
-            self.bars = jsonData;
-            [self.tableView reloadData];
-        };
-        _completionBlock = block;
-    }
-    return _completionBlock;
-}
 
 - (IBAction) loadBarInformation:(id)sender{
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ios-codeschool.bilue.com.au/samples/bars.json"]];
     
-    [JSONFetcher fetchFromURL:request with:[self completionBlock]];
+    [JSONFetcher fetchFromURL:request with:^(NSURLResponse *response, NSArray *jsonData, NSError *error) {
+        self.bars = jsonData;
+        [self.tableView reloadData];
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,8 +72,7 @@
     controller.addedBy = barInfo[@"creator"][@"name"];
     controller.location = barInfo[@"location"];
     controller.summary = barInfo[@"summary"];
-    NSNumber *rating = [NSNumber numberWithFloat:[barInfo[@"rating"] floatValue]];
-    controller.rating = rating;
+    controller.rating =  barInfo[@"rating"];
     controller.barName = barInfo[@"name"];
     
 
