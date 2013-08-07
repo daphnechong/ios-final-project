@@ -9,7 +9,7 @@
 #import "Mi9ViewController.h"
 #import "BarViewController.h"
 #import "JSONFetcher.h"
-
+#import "MBProgressHUD.h"
 
 @interface Mi9ViewController ()
 
@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self loadBarInformation:self];
+    [self loadBarInformation:self];  
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,8 +35,11 @@
 
 - (IBAction) loadBarInformation:(id)sender{
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ios-codeschool.bilue.com.au/samples/bars.json"]];
-    
+
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [JSONFetcher fetchFromURL:request with:^(NSURLResponse *response, NSArray *jsonData, NSError *error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+
         self.bars = jsonData;
         [self.tableView reloadData];
     }];
