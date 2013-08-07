@@ -19,6 +19,8 @@
 		64F7C80217AE0BAD00FE18B1 /* Mi9ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F7C80117AE0BAD00FE18B1 /* Mi9ViewController.m */; };
 		64F7C80517AE0BAD00FE18B1 /* Mi9ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F7C80317AE0BAD00FE18B1 /* Mi9ViewController.xib */; };
 		64F7C80D17AE0C7300FE18B1 /* JSONFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F7C80C17AE0C7300FE18B1 /* JSONFetcher.m */; };
+		64F7C81117AE584D00FE18B1 /* BarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F7C80F17AE584C00FE18B1 /* BarViewController.m */; };
+		64F7C81217AE584D00FE18B1 /* BarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64F7C81017AE584D00FE18B1 /* BarViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,9 @@
 		64F7C80417AE0BAD00FE18B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Mi9ViewController.xib; sourceTree = "<group>"; };
 		64F7C80B17AE0C7300FE18B1 /* JSONFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONFetcher.h; sourceTree = "<group>"; };
 		64F7C80C17AE0C7300FE18B1 /* JSONFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONFetcher.m; sourceTree = "<group>"; };
+		64F7C80E17AE584C00FE18B1 /* BarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarViewController.h; sourceTree = "<group>"; };
+		64F7C80F17AE584C00FE18B1 /* BarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarViewController.m; sourceTree = "<group>"; };
+		64F7C81017AE584D00FE18B1 /* BarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,9 @@
 			children = (
 				64F7C80017AE0BAD00FE18B1 /* Mi9ViewController.h */,
 				64F7C80117AE0BAD00FE18B1 /* Mi9ViewController.m */,
+				64F7C80E17AE584C00FE18B1 /* BarViewController.h */,
+				64F7C80F17AE584C00FE18B1 /* BarViewController.m */,
+				64F7C81017AE584D00FE18B1 /* BarViewController.xib */,
 				64F7C80317AE0BAD00FE18B1 /* Mi9ViewController.xib */,
 				64F7C80B17AE0C7300FE18B1 /* JSONFetcher.h */,
 				64F7C80C17AE0C7300FE18B1 /* JSONFetcher.m */,
@@ -169,6 +177,7 @@
 				64F7C7FD17AE0BAD00FE18B1 /* Default@2x.png in Resources */,
 				64F7C7FF17AE0BAD00FE18B1 /* Default-568h@2x.png in Resources */,
 				64F7C80517AE0BAD00FE18B1 /* Mi9ViewController.xib in Resources */,
+				64F7C81217AE584D00FE18B1 /* BarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +192,7 @@
 				64F7C7F917AE0BAD00FE18B1 /* Mi9AppDelegate.m in Sources */,
 				64F7C80217AE0BAD00FE18B1 /* Mi9ViewController.m in Sources */,
 				64F7C80D17AE0C7300FE18B1 /* JSONFetcher.m in Sources */,
+				64F7C81117AE584D00FE18B1 /* BarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
