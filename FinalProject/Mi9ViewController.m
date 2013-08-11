@@ -45,6 +45,19 @@
     }];
 }
 
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *barInfo = self.bars[indexPath.row];
+    
+    Mi9BarDetails *barDetails = [[Mi9BarDetails alloc] initWithDictionary:barInfo];
+    BarViewController *controller = [[BarViewController alloc] initWithNibName:@"BarViewController" usingBar:barDetails bundle:nil];
+    
+    [self.navigationController pushViewController:controller animated:YES];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.bars.count;
@@ -64,24 +77,6 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%@", _bars[indexPath.row][@"name"]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", _bars[indexPath.row][@"location"]];
     return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    BarViewController *controller = [[BarViewController alloc] initWithNibName:@"BarViewController" bundle:nil];
-    
-    NSDictionary *barInfo = self.bars[indexPath.row];
-
-    controller.addedBy = barInfo[@"creator"][@"name"];
-    controller.location = barInfo[@"location"];
-    controller.summary = barInfo[@"summary"];
-    controller.rating =  barInfo[@"rating"];
-    controller.barName = barInfo[@"name"];
-    
-
-    [self.navigationController pushViewController:controller animated:YES];
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
 }
 
 @end

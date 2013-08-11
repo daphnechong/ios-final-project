@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mi9BarDetails.h"
 
 @interface BarViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *BarNameLabel;
@@ -15,10 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *SummaryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *AddedByLabel;
 
-@property (nonatomic) NSString *addedBy;
-@property (nonatomic) NSString *location;
-@property (nonatomic) NSString *barName;
-@property (nonatomic) NSNumber *rating;
-@property (nonatomic) NSString *summary;
+@property (nonatomic) Mi9BarDetails *barDetails;
 
+
+- (id)initWithNibName:(NSString *)nibNameOrNil usingBar:(Mi9BarDetails *)barDetails bundle:(NSBundle *)nibBundleOrNil;
 @end
