@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		648F99A617B782D10040E8FB /* Mi9BarDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 648F99A517B782D10040E8FB /* Mi9BarDetails.m */; };
-		64B60EB517B7ACC0002B436B /* Mi9ViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B60EB417B7ACC0002B436B /* Mi9ViewControllerDelegate.m */; };
+		64B60EB517B7ACC0002B436B /* Mi9ViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */; };
 		64F7C7E917AE0BAD00FE18B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F7C7E817AE0BAD00FE18B1 /* UIKit.framework */; };
 		64F7C7EB17AE0BAD00FE18B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F7C7EA17AE0BAD00FE18B1 /* Foundation.framework */; };
 		64F7C7ED17AE0BAD00FE18B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F7C7EC17AE0BAD00FE18B1 /* CoreGraphics.framework */; };
@@ -30,8 +30,8 @@
 		331998FCB9394237BC8DC3CF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		648F99A417B782D10040E8FB /* Mi9BarDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9BarDetails.h; sourceTree = "<group>"; };
 		648F99A517B782D10040E8FB /* Mi9BarDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetails.m; sourceTree = "<group>"; };
-		64B60EB317B7ACC0002B436B /* Mi9ViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9ViewControllerDelegate.h; sourceTree = "<group>"; };
-		64B60EB417B7ACC0002B436B /* Mi9ViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9ViewControllerDelegate.m; sourceTree = "<group>"; };
+		64B60EB317B7ACC0002B436B /* Mi9ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9ViewControllerDataSource.h; sourceTree = "<group>"; };
+		64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9ViewControllerDataSource.m; sourceTree = "<group>"; };
 		64C3F18B17B24D84003A5E72 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		64F7C7E517AE0BAD00FE18B1 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F7C7E817AE0BAD00FE18B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -107,8 +107,8 @@
 			children = (
 				64F7C80017AE0BAD00FE18B1 /* Mi9ViewController.h */,
 				64F7C80117AE0BAD00FE18B1 /* Mi9ViewController.m */,
-				64B60EB317B7ACC0002B436B /* Mi9ViewControllerDelegate.h */,
-				64B60EB417B7ACC0002B436B /* Mi9ViewControllerDelegate.m */,
+				64B60EB317B7ACC0002B436B /* Mi9ViewControllerDataSource.h */,
+				64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */,
 				64F7C80E17AE584C00FE18B1 /* BarViewController.h */,
 				648F99A417B782D10040E8FB /* Mi9BarDetails.h */,
 				648F99A517B782D10040E8FB /* Mi9BarDetails.m */,
@@ -247,7 +247,7 @@
 				64F7C80D17AE0C7300FE18B1 /* JSONFetcher.m in Sources */,
 				64F7C81117AE584D00FE18B1 /* BarViewController.m in Sources */,
 				648F99A617B782D10040E8FB /* Mi9BarDetails.m in Sources */,
-				64B60EB517B7ACC0002B436B /* Mi9ViewControllerDelegate.m in Sources */,
+				64B60EB517B7ACC0002B436B /* Mi9ViewControllerDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface Mi9ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface Mi9ViewController : UIViewController <UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
