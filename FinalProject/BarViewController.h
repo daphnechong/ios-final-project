@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *RatingLabel;
 @property (weak, nonatomic) IBOutlet UILabel *SummaryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *AddedByLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (nonatomic) Mi9BarDetails *barDetails;
 

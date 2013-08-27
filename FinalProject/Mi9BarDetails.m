@@ -14,6 +14,8 @@
 @synthesize barName;
 @synthesize rating;
 @synthesize summary;
+@synthesize imageUrl;
+
 
 - (id)initWithDictionary:(NSDictionary *)barInfo {
     
@@ -25,8 +27,9 @@
         summary = barInfo[@"summary"];
         rating =  barInfo[@"rating"];
         barName = barInfo[@"name"];
+        imageUrl = [NSString stringWithFormat:@"%@%@", @"http://ios-codeschool.bilue.com.au/samples/v2/", barInfo[@"image"]];
+        
     }
     return self;
 };
-
 @end

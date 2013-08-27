@@ -10,7 +10,6 @@
 #import "BarViewController.h"
 #import "JSONFetcher.h"
 #import "Mi9ViewControllerDataSource.h"
-
 #import "MBProgressHUD.h"
 
 
@@ -40,7 +39,7 @@
 }
 
 - (IBAction) loadBarInformation:(id)sender{
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ios-codeschool.bilue.com.au/samples/bars.json"]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://ios-codeschool.bilue.com.au/samples/v2/bars.json"]];
 
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [JSONFetcher fetchFromURL:request with:^(NSURLResponse *response, NSArray *jsonData, NSError *error) {

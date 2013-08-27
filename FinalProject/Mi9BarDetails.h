@@ -14,6 +14,7 @@
 @property (nonatomic) NSString *barName;
 @property (nonatomic) NSNumber *rating;
 @property (nonatomic) NSString *summary;
+@property (nonatomic) NSString *imageUrl;
 
 - (id) initWithDictionary:(NSDictionary *)barInfo;
 

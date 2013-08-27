@@ -7,6 +7,7 @@
 //
 
 #import "BarViewController.h"
+#import <SDWebImage/SDWebImageManager.h>
 
 @interface BarViewController ()
 
@@ -47,6 +48,19 @@
     self.RatingLabel.text = barDetails.rating.description;
     self.LocationLabel.text = barDetails.location;
     self.AddedByLabel.text = barDetails.addedBy;
+ 
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+    [manager downloadWithURL:[NSURL URLWithString:barDetails.imageUrl] options:0 progress:^(NSUInteger receivedSize, long long expectedSize)
+    {
+         // progression tracking code
+    }
+    completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL option)
+    {
+         if (image)
+         {
+             self.imageView.image = image;
+         }
+    }];
 }
 
 - (void)didReceiveMemoryWarning

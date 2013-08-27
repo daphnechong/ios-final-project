@@ -32,7 +32,7 @@
 		648F99A517B782D10040E8FB /* Mi9BarDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9BarDetails.m; sourceTree = "<group>"; };
 		64B60EB317B7ACC0002B436B /* Mi9ViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mi9ViewControllerDataSource.h; sourceTree = "<group>"; };
 		64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mi9ViewControllerDataSource.m; sourceTree = "<group>"; };
-		64C3F18B17B24D84003A5E72 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		64C3F18B17B24D84003A5E72 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		64F7C7E517AE0BAD00FE18B1 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64F7C7E817AE0BAD00FE18B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		64F7C7EA17AE0BAD00FE18B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
