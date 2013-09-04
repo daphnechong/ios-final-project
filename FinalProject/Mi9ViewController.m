@@ -29,6 +29,8 @@
 
     self.tableViewDataSource = [[Mi9ViewControllerDataSource alloc] init];
     self.tableView.dataSource = self.tableViewDataSource;
+    
+
     [self loadBarInformation:self];
 }
 

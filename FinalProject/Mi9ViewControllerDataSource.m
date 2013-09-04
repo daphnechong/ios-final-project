@@ -7,6 +7,7 @@
 //
 
 #import "Mi9ViewControllerDataSource.h"
+#import "Mi9BarUITableViewCell.h"
 
 @implementation Mi9ViewControllerDataSource
 @synthesize bars;
@@ -14,6 +15,8 @@
 - (void) setBarInformation:(NSArray *)barArray
 {
     self.bars = barArray;
+    
+    //todo: create bar details objects 
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -25,15 +28,17 @@
 {
     static NSString *identifier = @"Bar Cells";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    Mi9BarUITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
+        // i never get here for some reason?
+        cell = [[Mi9BarUITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@", self.bars[indexPath.row][@"name"]];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.bars[indexPath.row][@"location"]];
+    [cell setBarDetails:[[Mi9BarDetails alloc] initWithDictionary:self.bars[indexPath.row]]];
+//  cell.textLabel.text = [NSString stringWithFormat:@"%@", self.bars[indexPath.row][@"name"]];
+//  cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", self.bars[indexPath.row][@"location"]];
     return cell;
 }
 @end
