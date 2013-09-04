@@ -20,11 +20,14 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         UIImageView* emptyStars = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"empty-stars"]];
+        emptyStars.frame =  CGRectMake(203, 20, emptyStars.bounds.size.width, emptyStars.bounds.size.height);
         [self addSubview:emptyStars];
         
         UIImageView* fullStars = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"full-stars"]];
         fullStars.contentMode = UIViewContentModeLeft;
         fullStars.clipsToBounds = YES;
+        fullStars.frame = CGRectMake(203, 20, fullStars.bounds.size.width, fullStars.bounds.size.height);
+        
         [self addSubview:fullStars];
         
         self.fullStars = fullStars;
@@ -37,7 +40,8 @@
 {
     self.textLabel.text = bar.barName;
     self.detailTextLabel.text = bar.location;
-    self.fullStars.frame = CGRectMake(self.fullStars.frame.origin.x, self.fullStars.frame.origin.y, self.fullStars.frame.size.width / 2, self.fullStars.frame.size.height);
+    float width = self.fullStars.frame.size.width * (bar.rating.floatValue / 5.0f);
+    self.fullStars.frame = CGRectMake(self.fullStars.frame.origin.x, self.fullStars.frame.origin.y, width, self.fullStars.frame.size.height);
     
 //    self.barLocationLabel.text = bar.location;
 //    self.barNameLabel.text = bar.barName;

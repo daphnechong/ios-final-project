@@ -79,6 +79,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		646A21D717D6D9D700E6EB7E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				64572F8717CCB5BB00E7151B /* full-stars.png */,
+				64572F8517CCB5A800E7151B /* empty-stars.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		646A21D817D6DA0C00E6EB7E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				648F99A517B782D10040E8FB /* Mi9BarDetails.m */,
+				648F99A417B782D10040E8FB /* Mi9BarDetails.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		646A21D917D6DA1E00E6EB7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				64F7C80017AE0BAD00FE18B1 /* Mi9ViewController.h */,
+				64F7C80117AE0BAD00FE18B1 /* Mi9ViewController.m */,
+				64F7C80E17AE584C00FE18B1 /* BarViewController.h */,
+				64F7C80F17AE584C00FE18B1 /* BarViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		646A21DA17D6DA4900E6EB7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64572F8017CCB13C00E7151B /* Mi9BarUITableViewCell.h */,
+				64F7C81017AE584D00FE18B1 /* BarViewController.xib */,
+				64F7C80317AE0BAD00FE18B1 /* Mi9ViewController.xib */,
+				64572F8117CCB13C00E7151B /* Mi9BarUITableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		646A21DB17D6DA9400E6EB7E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				64B60EB317B7ACC0002B436B /* Mi9ViewControllerDataSource.h */,
+				64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */,
+				64F7C80B17AE0C7300FE18B1 /* JSONFetcher.h */,
+				64F7C80C17AE0C7300FE18B1 /* JSONFetcher.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		64F7C7DC17AE0BAD00FE18B1 = {
 			isa = PBXGroup;
 			children = (
@@ -112,22 +163,11 @@
 		64F7C7EE17AE0BAD00FE18B1 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				64572F8517CCB5A800E7151B /* empty-stars.png */,
-				64572F8717CCB5BB00E7151B /* full-stars.png */,
-				64F7C80017AE0BAD00FE18B1 /* Mi9ViewController.h */,
-				64F7C80117AE0BAD00FE18B1 /* Mi9ViewController.m */,
-				64B60EB317B7ACC0002B436B /* Mi9ViewControllerDataSource.h */,
-				64B60EB417B7ACC0002B436B /* Mi9ViewControllerDataSource.m */,
-				64F7C80E17AE584C00FE18B1 /* BarViewController.h */,
-				648F99A417B782D10040E8FB /* Mi9BarDetails.h */,
-				648F99A517B782D10040E8FB /* Mi9BarDetails.m */,
-				64F7C80F17AE584C00FE18B1 /* BarViewController.m */,
-				64572F8017CCB13C00E7151B /* Mi9BarUITableViewCell.h */,
-				64572F8117CCB13C00E7151B /* Mi9BarUITableViewCell.m */,
-				64F7C81017AE584D00FE18B1 /* BarViewController.xib */,
-				64F7C80317AE0BAD00FE18B1 /* Mi9ViewController.xib */,
-				64F7C80B17AE0C7300FE18B1 /* JSONFetcher.h */,
-				64F7C80C17AE0C7300FE18B1 /* JSONFetcher.m */,
+				646A21DB17D6DA9400E6EB7E /* Data */,
+				646A21DA17D6DA4900E6EB7E /* View */,
+				646A21D917D6DA1E00E6EB7E /* Controllers */,
+				646A21D817D6DA0C00E6EB7E /* Model */,
+				646A21D717D6D9D700E6EB7E /* Assets */,
 				64F7C7EF17AE0BAD00FE18B1 /* Supporting Files */,
 			);
 			path = FinalProject;
